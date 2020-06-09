@@ -32,7 +32,7 @@ public class TC003_PUTReq {
 		httprequest.body(requestParam.toJSONString());
 				
 		//response object
-		Response response = httprequest.request(Method.PUT,"/posts/4");
+		Response response = httprequest.request(Method.PUT,"/employees/4");
 		
 		int status_code = response.getStatusCode();
 		System.out.println("status code: "+status_code);

@@ -19,7 +19,7 @@ public class TC001_GETMethod {
 		
 		RequestSpecification httprequest = RestAssured.given();
 		
-		Response response = httprequest.request(Method.GET,"/employee/1");
+		Response response = httprequest.request(Method.GET,"/employees");
 		
 		String responsebody = response.getBody().asString();
 		System.out.println("response body: "+responsebody);
